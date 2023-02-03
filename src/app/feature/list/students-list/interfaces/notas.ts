@@ -10,4 +10,5 @@ export interface Nota {
   estudiante?: Persona;
   nombreEstudiante?: string;
   estado: string;
+  nombres: string;
 }

@@ -14,12 +14,28 @@ import { MatListModule } from '@angular/material/list';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSelectModule } from '@angular/material/select';
+import { CursoComponent } from './curso/curso.component';
+import { CardComponent } from './curso/card/card.component';
+import { AsistenciaComponent } from './asistencia/asistencia.component';
+import { ListadofechaComponent } from './asistencia/listadofecha/listadofecha.component';
+import { RegistrofotograficoComponent } from './asistencia/registrofotografico/registrofotografico.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
-  declarations: [AppComponent, NavBarComponent],
+  declarations: [
+    AppComponent,
+    NavBarComponent,
+    CursoComponent,
+    CardComponent,
+    AsistenciaComponent,
+    ListadofechaComponent,
+    RegistrofotograficoComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     BrowserAnimationsModule,
     MatSidenavModule,
     LayoutModule,
@@ -30,6 +46,7 @@ import { MatSelectModule } from '@angular/material/select';
     HttpClientModule,
     MatSortModule,
     MatSelectModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
