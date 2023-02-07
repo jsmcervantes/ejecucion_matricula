@@ -17,5 +17,10 @@ export class TableListInputPipe implements PipeTransform {
     return items.filter((it: any) => {
       return it.estudiante?.nombres!.toLocaleLowerCase().includes(searchText);
     });
+    
+    return items.filter((it: any) => {
+      return it.notas?.estado!.toLocaleLowerCase().includes(searchText);
+    });
   }
+
 }

@@ -1,5 +1,5 @@
 <mat-form-field>
-  <mat-label>Buscar</mat-label>
+  <mat-label>Buscar Estudiante</mat-label>
   <input
     matInput
     (keyup)="applyFilter($event)"
@@ -7,13 +7,15 @@
     #input
   />
 </mat-form-field>
-<mat-form-field appearance="fill">
-  <mat-label>Filtrar por estado</mat-label>
-  <mat-select [(value)]="selectedOption" (click)="applyFilter($event)">
-    <mat-option *ngFor="let option of selectOptions" [value]="option">
-      {{ option }}
-    </mat-option>
-  </mat-select>
+ㅤㅤㅤㅤㅤ
+<mat-form-field>
+  <mat-label>Buscar por estado</mat-label>
+  <input
+    matInput
+    (keyup)="applyFilter($event)"
+    placeholder="Aprobado o Reprobado"
+    #input
+  />
 </mat-form-field>
 <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
   <ng-container matColumnDef="cedula">
