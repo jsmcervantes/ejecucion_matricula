@@ -24,4 +24,8 @@ export class StudentsTableService {
   getInscriptions() {
     return this.http.get<Nota[]>(this.notasUrl);
   }
+
+  updateInscriptions(inscription: Nota) {
+    return this.http.put<Nota>(`${this.notasUrl}`, inscription);
+  }
 }

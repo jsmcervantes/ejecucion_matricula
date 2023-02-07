@@ -44,6 +44,13 @@ export class StudentsTableComponent implements OnInit {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
+  printForm(nota: Nota) {
+    this.studentsTableService
+      .updateInscriptions(nota)
+      .subscribe((res) => console.log(res));
+    console.log(nota);
+  }
+
   // onChange($event: any) {
   //   let filteredData = this.dataSource.data.filter(
   //     (el) => el.estado.toLowerCase() === event!.value.toLowerCase()
