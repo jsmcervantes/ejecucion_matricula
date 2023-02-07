@@ -14,6 +14,7 @@ const routes: Routes = [
       ),
   },
   {path: 'curso', component:CursoComponent},
+  {path: 'curso/:id', component:CursoComponent},
   {path: 'asistencia', component:AsistenciaComponent},
   {path: 'listadofecha', component:ListadofechaComponent},
   {path: 'registrofotografico', component:RegistrofotograficoComponent}
