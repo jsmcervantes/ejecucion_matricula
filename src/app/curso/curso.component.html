@@ -7,15 +7,15 @@
 
 
 
-    <div class="grid grid-cols-3 grid-flow-row gap-2 justify-items-center">
-        <div class="card w-120 bg-base-100 shadow-xl">
-          <div class="card-body" *ngFor="let curso of cursoList">
+    <div class="grid">
+        <div class="grid grid-cols-4 grid-flow-row gap-2 justify-items-center ">
+          <div class="card-body w-120 bg-base-100 shadow-xl rounded-xl " *ngFor="let curso of cursoList">
             <h1 class="card-title" >{{curso.name}}</h1>
             <h5 >CODIGO DEL CURSO :  {{curso.codeCourse}}</h5>
             <h5 >MODALIDAD DEL CURSO :  {{curso.modality}}</h5>
             <h5 >PERIODO LECTIVO :  {{curso.schoolPeriod}}</h5>
             <div class="card-actions justify-end">
-              <button class="btn btn-primary" icon="edit" routerLink="/asistencia">Detalles</button>
+              <button class="btn btn-primary" icon="edit" routerLink="/students-list">Detalles</button>
             </div>
           </div>
         </div><br/>
