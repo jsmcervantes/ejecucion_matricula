@@ -48,5 +48,16 @@ export class CursoComponent {
       )
     }
 
+    public findByName(term: string): void{
+      if(term.length>=2){
+        this.cursoService.findByName(term).subscribe(
+          (response) => this.cursoList = response
+        )
+      }
+      if(term.length===0){
+        this.findAll();
+      }
+    }
+
 
 }

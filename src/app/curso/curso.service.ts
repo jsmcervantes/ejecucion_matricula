@@ -25,4 +25,8 @@ export class CursoService {
   public findAll(): Observable<Curso[]>{
     return this.http.get<Curso[]>(this.url+"/", this.httpOptions)
   }
+
+  public findByName(term: string): Observable<Curso[]>{
+    return this.http.get<Curso[]>(this.url+"/findByName/"+term, this.httpOptions);
+  }
 }
