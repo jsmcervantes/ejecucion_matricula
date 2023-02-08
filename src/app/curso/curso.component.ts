@@ -59,5 +59,15 @@ export class CursoComponent {
       }
     }
 
+    public findBySchoolPeriod(term: string): void{
+      if(term.length>=3){
+        this.cursoService.findBySchoolPeriod(term).subscribe(
+          (response) => this.cursoList = response
+        )
+      }
+      if(term.length===0){
+        this.findAll();
+      }
+    }
 
 }

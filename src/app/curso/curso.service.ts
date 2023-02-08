@@ -29,4 +29,8 @@ export class CursoService {
   public findByName(term: string): Observable<Curso[]>{
     return this.http.get<Curso[]>(this.url+"/findByName/"+term, this.httpOptions);
   }
+
+  public findBySchoolPeriod(term: string): Observable<Curso[]>{
+    return this.http.get<Curso[]>(this.url+"/findBySchoolPeriod/"+term, this.httpOptions);
+  }
 }
