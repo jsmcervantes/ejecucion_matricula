@@ -47,7 +47,10 @@ export class StudentsTableComponent implements OnInit {
   printForm(nota: Nota) {
     this.studentsTableService
       .updateInscriptions(nota)
-      .subscribe((res) => console.log(res));
+      .subscribe((res) => {
+        console.log(res)
+        this.findAll();
+      });
     console.log(nota);
   }
 
@@ -92,4 +95,10 @@ export class StudentsTableComponent implements OnInit {
       this.dataSource.paginator = this.paginator;
     });
   }
+  num: number;
+
+  validateNum(num: number) {
+    return num >= 1 && num <= 10 ? null : { outOfRange: true };
+  }
+
 }
