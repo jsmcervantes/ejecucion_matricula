@@ -11,7 +11,7 @@ export class StudentsTableService {
 
   personUrl: string = `http://localhost:8000/api/persona`;
 
-  notasUrl: string = `http://localhost:8080/api/notas/`;
+  notasUrl: string = `http://localhost:8082/api/notas/`;
 
   getPersons() {
     return this.http.get(this.personUrl);
