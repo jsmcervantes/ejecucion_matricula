@@ -1,8 +1,40 @@
+
+  <div class="navbar bg-base-100  w-screen" id="cecy">
+    <div class="flex-1" id="cecy">
+      <img src="https://ignug.yavirac.edu.ec/assets/images/web/logo_login.png" width="60px" height="30px"/>
+      <a class="btn btn-ghost normal-case text-xl">CECY</a>
+    </div>
+    <div class="flex-none gap-2" id="cecy">
+      <div class="dropdown dropdown-end">
+       
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="text-sm breadcrumbs" id="cecy">
+    <ul>
+      <li><a>  ㅤㅤㅤㅤㅤCursos</a></li>
+      <li><a>Listado de estudiantes</a></li>
+    </ul>
+  </div>
+  <div class="background bg-gray-100 h-full px-12">
+<br/>
+  <div class="group bg-base-100 shadow-xs rounded-box" id="titulo">
+    <h1 class=" p-7 text-2xl font-bold align-middle" >Listado Estudiantes</h1>
+  </div>
+<br/>
+
+<br/>
+  <div class="botones">
+    <button class="btn btn-alert" routerLink = "/curso">Regresar</button>
+    ㅤㅤㅤㅤㅤ
+    <button class="btn btn-accent" onclick="location.href = location .href">Refrescar</button>
+    ㅤㅤㅤㅤㅤ
+    <label for="my-modal-ca-6" fill="none" class="btn border-transparent btn-info"  routerLink = "/asistencia">Asistencia </label>
+</div>
+<br>
 <mat-form-field>
-<<<<<<< HEAD
-  <mat-label>Buscar</mat-label>
-  <input matInput (keyup)="applyFilter($event)" placeholder="Nombre o cedula" #input />
-=======
   <mat-label>Buscar Estudiante</mat-label>
   <input
     matInput
@@ -10,7 +42,6 @@
     placeholder="Nombre o cedula"
     #input
   />
->>>>>>> a8c29d646491acd220553274f732a4b0a0977c4b
 </mat-form-field>
 ㅤㅤㅤㅤㅤ
 <mat-form-field>
@@ -22,7 +53,7 @@
     #input
   />
 </mat-form-field>
-<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8" id="titulo">
   <ng-container matColumnDef="cedula">
     <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Ordenar por Cedula">
       Cedula
